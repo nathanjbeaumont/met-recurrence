@@ -1,0 +1,1 @@
+"%LOCALAPPDATA%\NA-MIC\Slicer 5.2.2\Slicer.exe" --show-python-console --python-script "ExpandContoursOnly.py"
