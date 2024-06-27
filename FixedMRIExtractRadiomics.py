@@ -41,7 +41,7 @@ def main():
             extractor_dict = extractor.execute(str(mri_path), str(contour_path))
             start_feature_idx = list(extractor_dict.keys()).index("original_firstorder_10Percentile")
             features_kept = list(extractor_dict.keys())[start_feature_idx:]
-            values_kept = [extractor_dict[key] for key in features_kept]
+            values_kept = list(extractor_dict.values())[start_feature_idx:]
             contour_extractions_list.append(values_kept)
             mri_path_list.append(str(mri_path))
             contour_path_list.append(str(contour_path))
